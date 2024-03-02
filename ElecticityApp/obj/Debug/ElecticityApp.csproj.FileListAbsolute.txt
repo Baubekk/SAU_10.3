@@ -1,0 +1,10 @@
+C:\Users\baybe\source\repos\sau3\ElecticityApp\bin\Debug\ElecticityApp.exe.config
+C:\Users\baybe\source\repos\sau3\ElecticityApp\bin\Debug\ElecticityApp.exe
+C:\Users\baybe\source\repos\sau3\ElecticityApp\bin\Debug\ElecticityApp.pdb
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.csproj.AssemblyReference.cache
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.Form1.resources
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.Properties.Resources.resources
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.csproj.GenerateResource.cache
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.csproj.CoreCompileInputs.cache
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.exe
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.pdb
