@@ -5,11 +5,6 @@ VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElecticityApp", "ElecticityApp.csproj", "{F8395875-52C3-4F04-9532-40BA07F7A312}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ElectricityApp", "ElectricityApp", "{8A6CA57E-43B1-4DEE-9F35-10F92B57B866}"
-	ProjectSection(SolutionItems) = preProject
-		MainButtons.cs = MainButtons.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

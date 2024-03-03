@@ -17,7 +17,7 @@ namespace ElecticityApp
             InitializeComponent();
             
         }
-        private void btnElcetro_MouseHover(object sender, EventArgs e)
+        private void btnElcetro_MouseEnter(object sender, EventArgs e)
         {
             btnElectro.ForeColor = Color.Black;
             btnElectro.BackColor = SystemColors.Control;
@@ -29,7 +29,7 @@ namespace ElecticityApp
             btnElectro.ForeColor = Color.White;
         }
 
-        private void btnZadachi_MouseHover(object sender, EventArgs e)
+        private void btnZadachi_MouseEnter(object sender, EventArgs e)
         {
             btnZadachi.ForeColor = Color.Black;
             btnZadachi.BackColor = SystemColors.Control;
@@ -41,7 +41,7 @@ namespace ElecticityApp
             btnZadachi.ForeColor = Color.White;
         }
 
-        private void btnCalc_MouseHover(object sender, EventArgs e)
+        private void btnCalc_MouseEnter(object sender, EventArgs e)
         {
             btnCalc.ForeColor = Color.Black;
             btnCalc.BackColor = SystemColors.Control;
@@ -53,7 +53,25 @@ namespace ElecticityApp
             btnCalc.ForeColor = Color.White;
         }
 
+        private void btnElectro_Click(object sender, EventArgs e)
+        {
+            panel_Electrostatika.Visible = true;
+            panel_Zadachi.Visible = false;
+        }
 
+        private void btnZadachi_Click(object sender, EventArgs e)
+        {
+            panel_Electrostatika.Visible = false;
+            panel_Zadachi.Visible = true;
+            panel_Calc.Visible = false;
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            panel_Calc.Visible = true;
+            panel_Zadachi.Visible = false;
+            panel_Electrostatika.Visible = false;
+        }
 
 
     }
