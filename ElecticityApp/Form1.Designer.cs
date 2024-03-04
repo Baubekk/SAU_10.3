@@ -31,6 +31,7 @@ namespace ElecticityApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnProveritZadachi = new System.Windows.Forms.Button();
             this.btnElectro = new System.Windows.Forms.Button();
             this.btnZadachi = new System.Windows.Forms.Button();
             this.btnCalc = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@ namespace ElecticityApp
             this.rTxtBox_Title_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.rTxtBox_Describe_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.panel_Zadachi = new System.Windows.Forms.Panel();
+            this.rTxtBox_Zadachi = new System.Windows.Forms.RichTextBox();
             this.grBx_1q = new System.Windows.Forms.GroupBox();
             this.rdBtn_1q_1v = new System.Windows.Forms.RadioButton();
             this.rdBtn_1q_2v = new System.Windows.Forms.RadioButton();
@@ -90,7 +92,6 @@ namespace ElecticityApp
             this.rdBtn_10q_3v = new System.Windows.Forms.RadioButton();
             this.rdBtn_10q_4v = new System.Windows.Forms.RadioButton();
             this.panel_Calc = new System.Windows.Forms.Panel();
-            this.rTxtBox_Zadachi = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -108,6 +109,25 @@ namespace ElecticityApp
             this.grBx_9q.SuspendLayout();
             this.grBx_10q.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnProveritZadachi
+            // 
+            this.btnProveritZadachi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProveritZadachi.FlatAppearance.BorderSize = 0;
+            this.btnProveritZadachi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveritZadachi.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProveritZadachi.ForeColor = System.Drawing.Color.White;
+            this.btnProveritZadachi.Location = new System.Drawing.Point(400, 4060);
+            this.btnProveritZadachi.Name = "btnProveritZadachi";
+            this.btnProveritZadachi.Size = new System.Drawing.Size(400, 50);
+            this.btnProveritZadachi.TabIndex = 0;
+            this.btnProveritZadachi.Text = "Проверить";
+            this.btnProveritZadachi.UseVisualStyleBackColor = false;
+            this.btnProveritZadachi.Click += new System.EventHandler(this.btnProveritZadachi_Click);
+            this.btnProveritZadachi.MouseEnter += new System.EventHandler(this.btnProveritZadachi_MouseEnter);
+            this.btnProveritZadachi.MouseLeave += new System.EventHandler(this.btnProveritZadachi_MouseLeave);
             // 
             // btnElectro
             // 
@@ -184,7 +204,7 @@ namespace ElecticityApp
             this.splitContainer.Panel2.Controls.Add(this.panel_Zadachi);
             this.splitContainer.Panel2.Controls.Add(this.panel_Calc);
             this.splitContainer.Panel2MinSize = 500;
-            this.splitContainer.Size = new System.Drawing.Size(1482, 853);
+            this.splitContainer.Size = new System.Drawing.Size(1502, 853);
             this.splitContainer.SplitterDistance = 299;
             this.splitContainer.SplitterWidth = 18;
             this.splitContainer.TabIndex = 3;
@@ -196,7 +216,7 @@ namespace ElecticityApp
             this.panel_Electrostatika.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Electrostatika.Location = new System.Drawing.Point(0, 0);
             this.panel_Electrostatika.Name = "panel_Electrostatika";
-            this.panel_Electrostatika.Size = new System.Drawing.Size(1161, 849);
+            this.panel_Electrostatika.Size = new System.Drawing.Size(1181, 849);
             this.panel_Electrostatika.TabIndex = 0;
             // 
             // rTxtBox_Title_Electrostatika
@@ -208,7 +228,7 @@ namespace ElecticityApp
             this.rTxtBox_Title_Electrostatika.ForeColor = System.Drawing.Color.White;
             this.rTxtBox_Title_Electrostatika.Location = new System.Drawing.Point(0, 0);
             this.rTxtBox_Title_Electrostatika.Name = "rTxtBox_Title_Electrostatika";
-            this.rTxtBox_Title_Electrostatika.Size = new System.Drawing.Size(1161, 71);
+            this.rTxtBox_Title_Electrostatika.Size = new System.Drawing.Size(1181, 71);
             this.rTxtBox_Title_Electrostatika.TabIndex = 1;
             this.rTxtBox_Title_Electrostatika.Text = "Напряженность электрического поля";
             // 
@@ -224,14 +244,14 @@ namespace ElecticityApp
             this.rTxtBox_Describe_Electrostatika.Location = new System.Drawing.Point(3, 72);
             this.rTxtBox_Describe_Electrostatika.Name = "rTxtBox_Describe_Electrostatika";
             this.rTxtBox_Describe_Electrostatika.ReadOnly = true;
-            this.rTxtBox_Describe_Electrostatika.Size = new System.Drawing.Size(1154, 774);
+            this.rTxtBox_Describe_Electrostatika.Size = new System.Drawing.Size(1174, 774);
             this.rTxtBox_Describe_Electrostatika.TabIndex = 0;
             this.rTxtBox_Describe_Electrostatika.Text = resources.GetString("rTxtBox_Describe_Electrostatika.Text");
             // 
             // panel_Zadachi
             // 
             this.panel_Zadachi.AutoScroll = true;
-            this.panel_Zadachi.Controls.Add(rTxtBox_Zadachi);
+            this.panel_Zadachi.Controls.Add(this.rTxtBox_Zadachi);
             this.panel_Zadachi.Controls.Add(this.grBx_1q);
             this.panel_Zadachi.Controls.Add(this.grBx_2q);
             this.panel_Zadachi.Controls.Add(this.grBx_3q);
@@ -242,11 +262,26 @@ namespace ElecticityApp
             this.panel_Zadachi.Controls.Add(this.grBx_8q);
             this.panel_Zadachi.Controls.Add(this.grBx_9q);
             this.panel_Zadachi.Controls.Add(this.grBx_10q);
+            this.panel_Zadachi.Controls.Add(this.btnProveritZadachi);
             this.panel_Zadachi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Zadachi.Location = new System.Drawing.Point(0, 0);
             this.panel_Zadachi.Name = "panel_Zadachi";
-            this.panel_Zadachi.Size = new System.Drawing.Size(1161, 849);
+            this.panel_Zadachi.Size = new System.Drawing.Size(1181, 849);
             this.panel_Zadachi.TabIndex = 0;
+            // 
+            // rTxtBox_Zadachi
+            // 
+            this.rTxtBox_Zadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.rTxtBox_Zadachi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rTxtBox_Zadachi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rTxtBox_Zadachi.Font = new System.Drawing.Font("Cambria", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rTxtBox_Zadachi.ForeColor = System.Drawing.Color.White;
+            this.rTxtBox_Zadachi.Location = new System.Drawing.Point(0, 0);
+            this.rTxtBox_Zadachi.Name = "rTxtBox_Zadachi";
+            this.rTxtBox_Zadachi.ReadOnly = true;
+            this.rTxtBox_Zadachi.Size = new System.Drawing.Size(1160, 80);
+            this.rTxtBox_Zadachi.TabIndex = 0;
+            this.rTxtBox_Zadachi.Text = "Тестовые задачи";
             // 
             // grBx_1q
             // 
@@ -260,7 +295,7 @@ namespace ElecticityApp
             this.grBx_1q.ForeColor = System.Drawing.Color.White;
             this.grBx_1q.Location = new System.Drawing.Point(40, 100);
             this.grBx_1q.Name = "grBx_1q";
-            this.grBx_1q.Size = new System.Drawing.Size(1050, 300);
+            this.grBx_1q.Size = new System.Drawing.Size(1070, 300);
             this.grBx_1q.TabIndex = 0;
             this.grBx_1q.TabStop = false;
             this.grBx_1q.Text = "1. Напряженность электростатического поля определена с помощью заряда q. Как изме" +
@@ -274,6 +309,7 @@ namespace ElecticityApp
             this.rdBtn_1q_1v.Size = new System.Drawing.Size(207, 33);
             this.rdBtn_1q_1v.TabIndex = 1;
             this.rdBtn_1q_1v.Text = "Не изменится";
+            this.rdBtn_1q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_1q_1v_CheckedChanged);
             // 
             // rdBtn_1q_2v
             // 
@@ -282,6 +318,7 @@ namespace ElecticityApp
             this.rdBtn_1q_2v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_1q_2v.TabIndex = 0;
             this.rdBtn_1q_2v.Text = "Увеличится в 4 раза";
+            this.rdBtn_1q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_1q_2v_CheckedChanged);
             // 
             // rdBtn_1q_3v
             // 
@@ -290,6 +327,7 @@ namespace ElecticityApp
             this.rdBtn_1q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_1q_3v.TabIndex = 0;
             this.rdBtn_1q_3v.Text = "Уменьшится в 4 раза";
+            this.rdBtn_1q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_1q_3v_CheckedChanged);
             // 
             // rdBtn_1q_4v
             // 
@@ -298,6 +336,7 @@ namespace ElecticityApp
             this.rdBtn_1q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_1q_4v.TabIndex = 0;
             this.rdBtn_1q_4v.Text = "Увеличится в 2 раза";
+            this.rdBtn_1q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_1q_4v_CheckedChanged);
             // 
             // grBx_2q
             // 
@@ -311,12 +350,12 @@ namespace ElecticityApp
             this.grBx_2q.ForeColor = System.Drawing.Color.White;
             this.grBx_2q.Location = new System.Drawing.Point(40, 450);
             this.grBx_2q.Name = "grBx_2q";
-            this.grBx_2q.Size = new System.Drawing.Size(1050, 350);
+            this.grBx_2q.Size = new System.Drawing.Size(1070, 350);
             this.grBx_2q.TabIndex = 0;
             this.grBx_2q.TabStop = false;
-            this.grBx_2q.Text = "Как изменится по модулю напряженность электрического поля точечного заряда в точк" +
-    "е А при увеличении точечного заряда в 2 раза и расстояния от заряда до точки А т" +
-    "оже в 2 раза?";
+            this.grBx_2q.Text = "2. Как изменится по модулю напряженность электрического поля точечного заряда в т" +
+    "очке А при увеличении точечного заряда в 2 раза и расстояния от заряда до точки " +
+    "А тоже в 2 раза?";
             // 
             // rdBtn_2q_1v
             // 
@@ -325,6 +364,7 @@ namespace ElecticityApp
             this.rdBtn_2q_1v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_2q_1v.TabIndex = 0;
             this.rdBtn_2q_1v.Text = "Не изменится";
+            this.rdBtn_2q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_2q_1v_CheckedChanged);
             // 
             // rdBtn_2q_2v
             // 
@@ -334,6 +374,7 @@ namespace ElecticityApp
             this.rdBtn_2q_2v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_2q_2v.TabIndex = 0;
             this.rdBtn_2q_2v.Text = "Увеличится в 4 раза";
+            this.rdBtn_2q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_2q_2v_CheckedChanged);
             // 
             // rdBtn_2q_3v
             // 
@@ -342,6 +383,7 @@ namespace ElecticityApp
             this.rdBtn_2q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_2q_3v.TabIndex = 0;
             this.rdBtn_2q_3v.Text = "Уменьшится в 4 раза";
+            this.rdBtn_2q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_2q_3v_CheckedChanged);
             // 
             // rdBtn_2q_4v
             // 
@@ -350,6 +392,7 @@ namespace ElecticityApp
             this.rdBtn_2q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_2q_4v.TabIndex = 0;
             this.rdBtn_2q_4v.Text = "Увеличится в 2 раза";
+            this.rdBtn_2q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_2q_4v_CheckedChanged);
             // 
             // grBx_3q
             // 
@@ -363,7 +406,7 @@ namespace ElecticityApp
             this.grBx_3q.ForeColor = System.Drawing.Color.White;
             this.grBx_3q.Location = new System.Drawing.Point(40, 850);
             this.grBx_3q.Name = "grBx_3q";
-            this.grBx_3q.Size = new System.Drawing.Size(1050, 350);
+            this.grBx_3q.Size = new System.Drawing.Size(1070, 350);
             this.grBx_3q.TabIndex = 0;
             this.grBx_3q.TabStop = false;
             this.grBx_3q.Text = "3. Могут ли линии напряженности электростатического поля пересекаться?";
@@ -374,9 +417,10 @@ namespace ElecticityApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdBtn_3q_1v.Location = new System.Drawing.Point(50, 100);
             this.rdBtn_3q_1v.Name = "rdBtn_3q_1v";
-            this.rdBtn_3q_1v.Size = new System.Drawing.Size(950, 80);
+            this.rdBtn_3q_1v.Size = new System.Drawing.Size(970, 80);
             this.rdBtn_3q_1v.TabIndex = 0;
             this.rdBtn_3q_1v.Text = "В зависимости от знака заряда, который создает электростатическое поле";
+            this.rdBtn_3q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_3q_1v_CheckedChanged);
             // 
             // rdBtn_3q_2v
             // 
@@ -385,6 +429,7 @@ namespace ElecticityApp
             this.rdBtn_3q_2v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_3q_2v.TabIndex = 0;
             this.rdBtn_3q_2v.Text = "Нет";
+            this.rdBtn_3q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_3q_2v_CheckedChanged);
             // 
             // rdBtn_3q_3v
             // 
@@ -393,6 +438,7 @@ namespace ElecticityApp
             this.rdBtn_3q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_3q_3v.TabIndex = 0;
             this.rdBtn_3q_3v.Text = "Да";
+            this.rdBtn_3q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_3q_3v_CheckedChanged);
             // 
             // rdBtn_3q_4v
             // 
@@ -401,6 +447,7 @@ namespace ElecticityApp
             this.rdBtn_3q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_3q_4v.TabIndex = 0;
             this.rdBtn_3q_4v.Text = "В зависимости от среды";
+            this.rdBtn_3q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_3q_4v_CheckedChanged);
             // 
             // grBx_4q
             // 
@@ -414,7 +461,7 @@ namespace ElecticityApp
             this.grBx_4q.ForeColor = System.Drawing.Color.White;
             this.grBx_4q.Location = new System.Drawing.Point(40, 1250);
             this.grBx_4q.Name = "grBx_4q";
-            this.grBx_4q.Size = new System.Drawing.Size(1050, 400);
+            this.grBx_4q.Size = new System.Drawing.Size(1070, 500);
             this.grBx_4q.TabIndex = 0;
             this.grBx_4q.TabStop = false;
             this.grBx_4q.Text = "4. Какое из приведенных ниже утверждений определяет понятие \"электрическое поле\"?" +
@@ -428,6 +475,7 @@ namespace ElecticityApp
             this.rdBtn_4q_1v.TabIndex = 0;
             this.rdBtn_4q_1v.Text = "Вид материи, главное свойство которой - действие с некоторой силой на тела, облад" +
     "ающие массой.";
+            this.rdBtn_4q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_4q_1v_CheckedChanged);
             // 
             // rdBtn_4q_2v
             // 
@@ -437,6 +485,7 @@ namespace ElecticityApp
             this.rdBtn_4q_2v.TabIndex = 0;
             this.rdBtn_4q_2v.Text = "Физическая величина, характеризующая способность совершать работу по переносу эле" +
     "ктрического заряда  в 1 Кл из одной точки в  другую.";
+            this.rdBtn_4q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_4q_2v_CheckedChanged);
             // 
             // rdBtn_4q_3v
             // 
@@ -446,6 +495,7 @@ namespace ElecticityApp
             this.rdBtn_4q_3v.TabIndex = 0;
             this.rdBtn_4q_3v.Text = "Вид материи, главное свойство которой - действие с некоторой силой на тела, облад" +
     "ающие электрическим зарядом.";
+            this.rdBtn_4q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_4q_3v_CheckedChanged);
             // 
             // rdBtn_4q_4v
             // 
@@ -454,6 +504,7 @@ namespace ElecticityApp
             this.rdBtn_4q_4v.Size = new System.Drawing.Size(700, 40);
             this.rdBtn_4q_4v.TabIndex = 0;
             this.rdBtn_4q_4v.Text = "Ни одно из утверждений не является верным";
+            this.rdBtn_4q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_4q_4v_CheckedChanged);
             // 
             // grBx_5q
             // 
@@ -465,9 +516,9 @@ namespace ElecticityApp
             this.grBx_5q.Controls.Add(this.rdBtn_5q_4v);
             this.grBx_5q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_5q.ForeColor = System.Drawing.Color.White;
-            this.grBx_5q.Location = new System.Drawing.Point(40, 1700);
+            this.grBx_5q.Location = new System.Drawing.Point(40, 1800);
             this.grBx_5q.Name = "grBx_5q";
-            this.grBx_5q.Size = new System.Drawing.Size(1050, 300);
+            this.grBx_5q.Size = new System.Drawing.Size(1070, 300);
             this.grBx_5q.TabIndex = 0;
             this.grBx_5q.TabStop = false;
             this.grBx_5q.Text = "5. Модуль напряженности электрического поля в данной точке равен 200 В/м. Какая с" +
@@ -481,6 +532,7 @@ namespace ElecticityApp
             this.rdBtn_5q_1v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_5q_1v.TabIndex = 0;
             this.rdBtn_5q_1v.Text = "25";
+            this.rdBtn_5q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_5q_1v_CheckedChanged);
             // 
             // rdBtn_5q_2v
             // 
@@ -489,6 +541,7 @@ namespace ElecticityApp
             this.rdBtn_5q_2v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_5q_2v.TabIndex = 0;
             this.rdBtn_5q_2v.Text = "2.5";
+            this.rdBtn_5q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_5q_2v_CheckedChanged);
             // 
             // rdBtn_5q_3v
             // 
@@ -497,6 +550,7 @@ namespace ElecticityApp
             this.rdBtn_5q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_5q_3v.TabIndex = 0;
             this.rdBtn_5q_3v.Text = "1600";
+            this.rdBtn_5q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_5q_3v_CheckedChanged);
             // 
             // rdBtn_5q_4v
             // 
@@ -505,6 +559,7 @@ namespace ElecticityApp
             this.rdBtn_5q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_5q_4v.TabIndex = 0;
             this.rdBtn_5q_4v.Text = "1,6";
+            this.rdBtn_5q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_5q_4v_CheckedChanged);
             // 
             // grBx_6q
             // 
@@ -516,9 +571,9 @@ namespace ElecticityApp
             this.grBx_6q.Controls.Add(this.rdBtn_6q_4v);
             this.grBx_6q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_6q.ForeColor = System.Drawing.Color.White;
-            this.grBx_6q.Location = new System.Drawing.Point(40, 2050);
+            this.grBx_6q.Location = new System.Drawing.Point(40, 2150);
             this.grBx_6q.Name = "grBx_6q";
-            this.grBx_6q.Size = new System.Drawing.Size(1050, 350);
+            this.grBx_6q.Size = new System.Drawing.Size(1070, 350);
             this.grBx_6q.TabIndex = 0;
             this.grBx_6q.TabStop = false;
             this.grBx_6q.Text = resources.GetString("grBx_6q.Text");
@@ -530,6 +585,7 @@ namespace ElecticityApp
             this.rdBtn_6q_1v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_6q_1v.TabIndex = 0;
             this.rdBtn_6q_1v.Text = "0.04";
+            this.rdBtn_6q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_6q_1v_CheckedChanged);
             // 
             // rdBtn_6q_2v
             // 
@@ -546,6 +602,7 @@ namespace ElecticityApp
             this.rdBtn_6q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_6q_3v.TabIndex = 0;
             this.rdBtn_6q_3v.Text = "0.002";
+            this.rdBtn_6q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_6q_3v_CheckedChanged);
             // 
             // rdBtn_6q_4v
             // 
@@ -554,6 +611,7 @@ namespace ElecticityApp
             this.rdBtn_6q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_6q_4v.TabIndex = 0;
             this.rdBtn_6q_4v.Text = "0.4";
+            this.rdBtn_6q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_6q_4v_CheckedChanged);
             // 
             // grBx_7q
             // 
@@ -565,44 +623,48 @@ namespace ElecticityApp
             this.grBx_7q.Controls.Add(this.rdBtn_7q_4v);
             this.grBx_7q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_7q.ForeColor = System.Drawing.Color.White;
-            this.grBx_7q.Location = new System.Drawing.Point(40, 2450);
+            this.grBx_7q.Location = new System.Drawing.Point(40, 2550);
             this.grBx_7q.Name = "grBx_7q";
-            this.grBx_7q.Size = new System.Drawing.Size(1050, 300);
+            this.grBx_7q.Size = new System.Drawing.Size(1070, 350);
             this.grBx_7q.TabIndex = 0;
             this.grBx_7q.TabStop = false;
             this.grBx_7q.Text = resources.GetString("grBx_7q.Text");
             // 
             // rdBtn_7q_1v
             // 
-            this.rdBtn_7q_1v.Location = new System.Drawing.Point(50, 100);
+            this.rdBtn_7q_1v.Location = new System.Drawing.Point(50, 150);
             this.rdBtn_7q_1v.Name = "rdBtn_7q_1v";
             this.rdBtn_7q_1v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_7q_1v.TabIndex = 0;
             this.rdBtn_7q_1v.Text = "0.18";
+            this.rdBtn_7q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_7q_1v_CheckedChanged);
             // 
             // rdBtn_7q_2v
             // 
-            this.rdBtn_7q_2v.Location = new System.Drawing.Point(50, 150);
+            this.rdBtn_7q_2v.Location = new System.Drawing.Point(50, 200);
             this.rdBtn_7q_2v.Name = "rdBtn_7q_2v";
             this.rdBtn_7q_2v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_7q_2v.TabIndex = 0;
             this.rdBtn_7q_2v.Text = "42";
+            this.rdBtn_7q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_7q_2v_CheckedChanged);
             // 
             // rdBtn_7q_3v
             // 
-            this.rdBtn_7q_3v.Location = new System.Drawing.Point(50, 200);
+            this.rdBtn_7q_3v.Location = new System.Drawing.Point(50, 250);
             this.rdBtn_7q_3v.Name = "rdBtn_7q_3v";
             this.rdBtn_7q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_7q_3v.TabIndex = 0;
             this.rdBtn_7q_3v.Text = "18";
+            this.rdBtn_7q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_7q_3v_CheckedChanged);
             // 
             // rdBtn_7q_4v
             // 
-            this.rdBtn_7q_4v.Location = new System.Drawing.Point(50, 250);
+            this.rdBtn_7q_4v.Location = new System.Drawing.Point(50, 300);
             this.rdBtn_7q_4v.Name = "rdBtn_7q_4v";
             this.rdBtn_7q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_7q_4v.TabIndex = 0;
             this.rdBtn_7q_4v.Text = "Ни один из ответов правильный";
+            this.rdBtn_7q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_7q_4v_CheckedChanged);
             // 
             // grBx_8q
             // 
@@ -614,9 +676,9 @@ namespace ElecticityApp
             this.grBx_8q.Controls.Add(this.rdBtn_8q_4v);
             this.grBx_8q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_8q.ForeColor = System.Drawing.Color.White;
-            this.grBx_8q.Location = new System.Drawing.Point(40, 2800);
+            this.grBx_8q.Location = new System.Drawing.Point(40, 2950);
             this.grBx_8q.Name = "grBx_8q";
-            this.grBx_8q.Size = new System.Drawing.Size(1050, 260);
+            this.grBx_8q.Size = new System.Drawing.Size(1070, 260);
             this.grBx_8q.TabIndex = 0;
             this.grBx_8q.TabStop = false;
             this.grBx_8q.Text = "8. Чтобы определить наличие электрического поля в данной точке";
@@ -628,14 +690,16 @@ namespace ElecticityApp
             this.rdBtn_8q_1v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_8q_1v.TabIndex = 0;
             this.rdBtn_8q_1v.Text = "достаточно посмотреть в данную точку пространства и увидеть его";
+            this.rdBtn_8q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_8q_1v_CheckedChanged);
             // 
             // rdBtn_8q_2v
             // 
             this.rdBtn_8q_2v.Location = new System.Drawing.Point(50, 110);
             this.rdBtn_8q_2v.Name = "rdBtn_8q_2v";
-            this.rdBtn_8q_2v.Size = new System.Drawing.Size(500, 40);
+            this.rdBtn_8q_2v.Size = new System.Drawing.Size(700, 40);
             this.rdBtn_8q_2v.TabIndex = 0;
             this.rdBtn_8q_2v.Text = "поместить в эту точку пробный заряд";
+            this.rdBtn_8q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_8q_2v_CheckedChanged);
             // 
             // rdBtn_8q_3v
             // 
@@ -644,6 +708,7 @@ namespace ElecticityApp
             this.rdBtn_8q_3v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_8q_3v.TabIndex = 0;
             this.rdBtn_8q_3v.Text = "поместить в эту точку проводник с током";
+            this.rdBtn_8q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_8q_3v_CheckedChanged);
             // 
             // rdBtn_8q_4v
             // 
@@ -652,6 +717,7 @@ namespace ElecticityApp
             this.rdBtn_8q_4v.Size = new System.Drawing.Size(500, 40);
             this.rdBtn_8q_4v.TabIndex = 0;
             this.rdBtn_8q_4v.Text = "Создать магнитное поле";
+            this.rdBtn_8q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_8q_4v_CheckedChanged);
             // 
             // grBx_9q
             // 
@@ -663,45 +729,49 @@ namespace ElecticityApp
             this.grBx_9q.Controls.Add(this.rdBtn_9q_4v);
             this.grBx_9q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_9q.ForeColor = System.Drawing.Color.White;
-            this.grBx_9q.Location = new System.Drawing.Point(40, 3250);
+            this.grBx_9q.Location = new System.Drawing.Point(40, 3260);
             this.grBx_9q.Name = "grBx_9q";
-            this.grBx_9q.Size = new System.Drawing.Size(1050, 300);
+            this.grBx_9q.Size = new System.Drawing.Size(1070, 300);
             this.grBx_9q.TabIndex = 0;
             this.grBx_9q.TabStop = false;
-            this.grBx_9q.Text = "9. Сила, действующая в поле на заряд в 4·10^-5 Кл, равна 20 Н. Напряженность поля в " +
-    "этой точке равна";
+            this.grBx_9q.Text = "9. Сила, действующая в поле на заряд в 4·10^-5 Кл, равна 20 Н. Напряженность поля" +
+    " в этой точке равна";
             // 
             // rdBtn_9q_1v
             // 
             this.rdBtn_9q_1v.Location = new System.Drawing.Point(50, 100);
             this.rdBtn_9q_1v.Name = "rdBtn_9q_1v";
             this.rdBtn_9q_1v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_9q_1v.Text = "5*10^4 В/м";
             this.rdBtn_9q_1v.TabIndex = 0;
+            this.rdBtn_9q_1v.Text = "5*10^4 В/м";
+            this.rdBtn_9q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_9q_1v_CheckedChanged);
             // 
             // rdBtn_9q_2v
             // 
             this.rdBtn_9q_2v.Location = new System.Drawing.Point(50, 150);
             this.rdBtn_9q_2v.Name = "rdBtn_9q_2v";
             this.rdBtn_9q_2v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_9q_2v.Text = "5*10^-6 В/м";
             this.rdBtn_9q_2v.TabIndex = 0;
+            this.rdBtn_9q_2v.Text = "5*10^-6 В/м";
+            this.rdBtn_9q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_9q_2v_CheckedChanged);
             // 
             // rdBtn_9q_3v
             // 
             this.rdBtn_9q_3v.Location = new System.Drawing.Point(50, 200);
             this.rdBtn_9q_3v.Name = "rdBtn_9q_3v";
             this.rdBtn_9q_3v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_9q_3v.Text = "5*10^5 Н/Кл";
             this.rdBtn_9q_3v.TabIndex = 0;
+            this.rdBtn_9q_3v.Text = "5*10^5 Н/Кл";
+            this.rdBtn_9q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_9q_3v_CheckedChanged);
             // 
             // rdBtn_9q_4v
             // 
             this.rdBtn_9q_4v.Location = new System.Drawing.Point(50, 250);
             this.rdBtn_9q_4v.Name = "rdBtn_9q_4v";
             this.rdBtn_9q_4v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_9q_4v.Text = "0.2*10^-5 Н/Кл";
             this.rdBtn_9q_4v.TabIndex = 0;
+            this.rdBtn_9q_4v.Text = "0.2*10^-5 Н/Кл";
+            this.rdBtn_9q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_9q_4v_CheckedChanged);
             // 
             // grBx_10q
             // 
@@ -713,44 +783,49 @@ namespace ElecticityApp
             this.grBx_10q.Controls.Add(this.rdBtn_10q_4v);
             this.grBx_10q.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grBx_10q.ForeColor = System.Drawing.Color.White;
-            this.grBx_10q.Location = new System.Drawing.Point(50, 3600);
+            this.grBx_10q.Location = new System.Drawing.Point(40, 3610);
             this.grBx_10q.Name = "grBx_10q";
-            this.grBx_10q.Size = new System.Drawing.Size(1050, 400);
-            this.grBx_10q.Text = "10. Вектор напряженности электрического поля, созданного точечным зарядом в некоторой точке пространства направлен";
+            this.grBx_10q.Size = new System.Drawing.Size(1070, 400);
             this.grBx_10q.TabIndex = 0;
             this.grBx_10q.TabStop = false;
+            this.grBx_10q.Text = "10. Вектор напряженности электрического поля, созданного точечным зарядом в некот" +
+    "орой точке пространства направлен";
             // 
             // rdBtn_10q_1v
             // 
             this.rdBtn_10q_1v.Location = new System.Drawing.Point(50, 100);
             this.rdBtn_10q_1v.Name = "rdBtn_10q_1v";
             this.rdBtn_10q_1v.Size = new System.Drawing.Size(700, 80);
-            this.rdBtn_10q_1v.Text = "Он не направлен ни в какую сторону, так как это материя";
             this.rdBtn_10q_1v.TabIndex = 0;
+            this.rdBtn_10q_1v.Text = "Он не направлен ни в какую сторону, так как это материя";
+            this.rdBtn_10q_1v.CheckedChanged += new System.EventHandler(this.rdBtn_10q_1v_CheckedChanged);
             // 
             // rdBtn_10q_2v
             // 
             this.rdBtn_10q_2v.Location = new System.Drawing.Point(50, 190);
             this.rdBtn_10q_2v.Name = "rdBtn_10q_2v";
             this.rdBtn_10q_2v.Size = new System.Drawing.Size(700, 80);
-            this.rdBtn_10q_2v.Text = "может быть напрален как в сторону заряда, так и в сторону от него";
             this.rdBtn_10q_2v.TabIndex = 0;
+            this.rdBtn_10q_2v.Text = "может быть напрален как в сторону заряда, так и в сторону от него";
+            this.rdBtn_10q_2v.CheckedChanged += new System.EventHandler(this.rdBtn_10q_2v_CheckedChanged);
             // 
             // rdBtn_10q_3v
             // 
             this.rdBtn_10q_3v.Location = new System.Drawing.Point(50, 280);
             this.rdBtn_10q_3v.Name = "rdBtn_10q_3v";
             this.rdBtn_10q_3v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_10q_3v.Text = "в сторону этого заряда";
             this.rdBtn_10q_3v.TabIndex = 0;
+            this.rdBtn_10q_3v.Text = "в сторону этого заряда";
+            this.rdBtn_10q_3v.CheckedChanged += new System.EventHandler(this.rdBtn_10q_3v_CheckedChanged);
             // 
             // rdBtn_10q_4v
             // 
             this.rdBtn_10q_4v.Location = new System.Drawing.Point(50, 320);
             this.rdBtn_10q_4v.Name = "rdBtn_10q_4v";
             this.rdBtn_10q_4v.Size = new System.Drawing.Size(500, 40);
-            this.rdBtn_10q_4v.Text = "В сторону от этого заряда";
             this.rdBtn_10q_4v.TabIndex = 0;
+            this.rdBtn_10q_4v.Text = "В сторону от этого заряда";
+            this.rdBtn_10q_4v.CheckedChanged += new System.EventHandler(this.rdBtn_10q_4v_CheckedChanged);
             // 
             // panel_Calc
             // 
@@ -758,32 +833,18 @@ namespace ElecticityApp
             this.panel_Calc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Calc.Location = new System.Drawing.Point(0, 0);
             this.panel_Calc.Name = "panel_Calc";
-            this.panel_Calc.Size = new System.Drawing.Size(1161, 849);
+            this.panel_Calc.Size = new System.Drawing.Size(1181, 849);
             this.panel_Calc.TabIndex = 0;
-            // 
-            // rTxtBox_Zadachi
-            // 
-            this.rTxtBox_Zadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.rTxtBox_Zadachi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rTxtBox_Zadachi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rTxtBox_Zadachi.Font = new System.Drawing.Font("Cambria", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rTxtBox_Zadachi.ForeColor = System.Drawing.Color.White;
-            this.rTxtBox_Zadachi.Location = new System.Drawing.Point(0, 0);
-            this.rTxtBox_Zadachi.Name = "rTxtBox_Zadachi";
-            this.rTxtBox_Zadachi.ReadOnly = true;
-            this.rTxtBox_Zadachi.Size = new System.Drawing.Size(500, 80);
-            this.rTxtBox_Zadachi.TabIndex = 0;
-            this.rTxtBox_Zadachi.Text = "Тестовые задачи";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1482, 853);
+            this.ClientSize = new System.Drawing.Size(1502, 853);
             this.Controls.Add(this.splitContainer);
             this.ForeColor = System.Drawing.Color.White;
-            this.MinimumSize = new System.Drawing.Size(1500, 900);
+            this.MinimumSize = new System.Drawing.Size(1520, 900);
             this.Name = "Form1";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
@@ -875,6 +936,10 @@ namespace ElecticityApp
         private System.Windows.Forms.GroupBox grBx_8q;
         private System.Windows.Forms.GroupBox grBx_9q;
         private System.Windows.Forms.GroupBox grBx_10q;
+        //
+        //
+        //
+        private System.Windows.Forms.Button btnProveritZadachi;
 
 
 
