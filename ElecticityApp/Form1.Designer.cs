@@ -41,6 +41,7 @@ namespace ElecticityApp
             this.rTxtBox_Describe_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.panel_Zadachi = new System.Windows.Forms.Panel();
             this.rTxtBox_Zadachi = new System.Windows.Forms.RichTextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.grBx_1q = new System.Windows.Forms.GroupBox();
             this.rdBtn_1q_1v = new System.Windows.Forms.RadioButton();
             this.rdBtn_1q_2v = new System.Windows.Forms.RadioButton();
@@ -92,6 +93,14 @@ namespace ElecticityApp
             this.rdBtn_10q_3v = new System.Windows.Forms.RadioButton();
             this.rdBtn_10q_4v = new System.Windows.Forms.RadioButton();
             this.panel_Calc = new System.Windows.Forms.Panel();
+            this.lblForce = new System.Windows.Forms.Label();
+            this.lblCharge = new System.Windows.Forms.Label();
+            this.lblFieldStrength = new System.Windows.Forms.Label();
+            this.txtBxForce = new System.Windows.Forms.TextBox();
+            this.txtBxCharge = new System.Windows.Forms.TextBox();
+            this.txtBxFieldStrength = new System.Windows.Forms.TextBox();
+            this.btnCalcFieldStrength = new System.Windows.Forms.Button();
+            this.rTxtBox_Calc_Instr = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -108,6 +117,7 @@ namespace ElecticityApp
             this.grBx_8q.SuspendLayout();
             this.grBx_9q.SuspendLayout();
             this.grBx_10q.SuspendLayout();
+            this.panel_Calc.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnProveritZadachi
@@ -180,6 +190,23 @@ namespace ElecticityApp
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             this.btnCalc.MouseEnter += new System.EventHandler(this.btnCalc_MouseEnter);
             this.btnCalc.MouseLeave += new System.EventHandler(this.btnCalc_MouseLeave);
+            //
+            // btnLogin
+            //
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(12, 600);
+            this.btnLogin.Name = "btnCalc";
+            this.btnLogin.Size = new System.Drawing.Size(366, 50);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.MouseEnter += new System.EventHandler(this.btnLogin_MouseEnter);
+            this.btnLogin.MouseLeave += new System.EventHandler(this.btnLogin_MouseLeave);
             // 
             // splitContainer
             // 
@@ -196,6 +223,7 @@ namespace ElecticityApp
             this.splitContainer.Panel1.Controls.Add(this.btnElectro);
             this.splitContainer.Panel1.Controls.Add(this.btnCalc);
             this.splitContainer.Panel1.Controls.Add(this.btnZadachi);
+            this.splitContainer.Panel1.Controls.Add(this.btnLogin);
             this.splitContainer.Panel1MinSize = 224;
             // 
             // splitContainer.Panel2
@@ -830,11 +858,126 @@ namespace ElecticityApp
             // panel_Calc
             // 
             this.panel_Calc.AutoScroll = true;
+            this.panel_Calc.Controls.Add(this.lblForce);
+            this.panel_Calc.Controls.Add(this.lblCharge);
+            this.panel_Calc.Controls.Add(this.lblFieldStrength);
+            this.panel_Calc.Controls.Add(this.txtBxForce);
+            this.panel_Calc.Controls.Add(this.txtBxCharge);
+            this.panel_Calc.Controls.Add(this.txtBxFieldStrength);
+            this.panel_Calc.Controls.Add(this.btnCalcFieldStrength);
+            this.panel_Calc.Controls.Add(this.rTxtBox_Calc_Instr);
             this.panel_Calc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Calc.Location = new System.Drawing.Point(0, 0);
             this.panel_Calc.Name = "panel_Calc";
             this.panel_Calc.Size = new System.Drawing.Size(1181, 849);
             this.panel_Calc.TabIndex = 0;
+            // 
+            // lblForce
+            // 
+            this.lblForce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.lblForce.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblForce.ForeColor = System.Drawing.Color.White;
+            this.lblForce.Location = new System.Drawing.Point(40, 150);
+            this.lblForce.Name = "lblForce";
+            this.lblForce.Size = new System.Drawing.Size(250, 85);
+            this.lblForce.TabIndex = 0;
+            this.lblForce.Text = "F =";
+            this.lblForce.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCharge
+            // 
+            this.lblCharge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.lblCharge.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCharge.ForeColor = System.Drawing.Color.White;
+            this.lblCharge.Location = new System.Drawing.Point(40, 250);
+            this.lblCharge.Name = "lblCharge";
+            this.lblCharge.Size = new System.Drawing.Size(250, 85);
+            this.lblCharge.TabIndex = 0;
+            this.lblCharge.Text = "q =";
+            this.lblCharge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblFieldStrength
+            // 
+            this.lblFieldStrength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.lblFieldStrength.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFieldStrength.ForeColor = System.Drawing.Color.White;
+            this.lblFieldStrength.Location = new System.Drawing.Point(40, 350);
+            this.lblFieldStrength.Name = "lblFieldStrength";
+            this.lblFieldStrength.Size = new System.Drawing.Size(250, 85);
+            this.lblFieldStrength.TabIndex = 0;
+            this.lblFieldStrength.Text = "E =";
+            this.lblFieldStrength.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtBxForce
+            // 
+            this.txtBxForce.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBxForce.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBxForce.Location = new System.Drawing.Point(300, 170);
+            this.txtBxForce.Multiline = true;
+            this.txtBxForce.Name = "txtBxForce";
+            this.txtBxForce.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtBxForce.Size = new System.Drawing.Size(800, 45);
+            this.txtBxForce.TabIndex = 0;
+            // 
+            // txtBxCharge
+            // 
+            this.txtBxCharge.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBxCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBxCharge.Location = new System.Drawing.Point(300, 270);
+            this.txtBxCharge.Multiline = true;
+            this.txtBxCharge.Name = "txtBxCharge";
+            this.txtBxCharge.Size = new System.Drawing.Size(800, 45);
+            this.txtBxCharge.TabIndex = 0;
+            // 
+            // txtBxFieldStrength
+            // 
+            this.txtBxFieldStrength.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBxFieldStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBxFieldStrength.Location = new System.Drawing.Point(300, 370);
+            this.txtBxFieldStrength.Multiline = true;
+            this.txtBxFieldStrength.Name = "txtBxFieldStrength";
+            this.txtBxFieldStrength.ReadOnly = true;
+            this.txtBxFieldStrength.Size = new System.Drawing.Size(800, 45);
+            this.txtBxFieldStrength.TabIndex = 0;
+            // 
+            // btnCalcFieldStrength
+            // 
+            this.btnCalcFieldStrength.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCalcFieldStrength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCalcFieldStrength.FlatAppearance.BorderSize = 0;
+            this.btnCalcFieldStrength.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcFieldStrength.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCalcFieldStrength.Location = new System.Drawing.Point(300, 450);
+            this.btnCalcFieldStrength.Name = "btnCalcFieldStrength";
+            this.btnCalcFieldStrength.Size = new System.Drawing.Size(300, 50);
+            this.btnCalcFieldStrength.TabIndex = 0;
+            this.btnCalcFieldStrength.Text = "Считать";
+            this.btnCalcFieldStrength.UseVisualStyleBackColor = false;
+            this.btnCalcFieldStrength.Click += new System.EventHandler(this.btnCalcFieldStrength_Click);
+            this.btnCalcFieldStrength.MouseEnter += new System.EventHandler(this.btnCalcFieldStrength_MouseEnter);
+            this.btnCalcFieldStrength.MouseLeave += new System.EventHandler(this.btnCalcFieldStrength_MouseLeave);
+            // 
+            // rTxtBox_Calc_Instr
+            // 
+            this.rTxtBox_Calc_Instr.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rTxtBox_Calc_Instr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.rTxtBox_Calc_Instr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rTxtBox_Calc_Instr.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rTxtBox_Calc_Instr.ForeColor = System.Drawing.Color.White;
+            this.rTxtBox_Calc_Instr.Location = new System.Drawing.Point(50, 600);
+            this.rTxtBox_Calc_Instr.Name = "rTxtBox_Calc_Instr";
+            this.rTxtBox_Calc_Instr.ReadOnly = true;
+            this.rTxtBox_Calc_Instr.Size = new System.Drawing.Size(800, 600);
+            this.rTxtBox_Calc_Instr.TabIndex = 0;
+            this.rTxtBox_Calc_Instr.Text = "Инструкция.\nВводить только числа, дробную часть выделять запятой без пробелов. на" +
+    "пример: 2 или 2,5.\nдля записи экспоненты использовать E. 5E2 = 5 * 10^2 = 500 ил" +
+    "и 5E-2 = 5 * 10^(-2) = 0,05.\n\n";
             // 
             // Form1
             // 
@@ -863,6 +1006,8 @@ namespace ElecticityApp
             this.grBx_8q.ResumeLayout(false);
             this.grBx_9q.ResumeLayout(false);
             this.grBx_10q.ResumeLayout(false);
+            this.panel_Calc.ResumeLayout(false);
+            this.panel_Calc.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -880,6 +1025,15 @@ namespace ElecticityApp
         private System.Windows.Forms.Panel panel_Zadachi;
         private System.Windows.Forms.RichTextBox rTxtBox_Zadachi;
         private System.Windows.Forms.Panel panel_Calc;
+        private System.Windows.Forms.Label lblForce;
+        private System.Windows.Forms.Label lblCharge;
+        private System.Windows.Forms.Label lblFieldStrength;
+        private System.Windows.Forms.TextBox txtBxForce;
+        private System.Windows.Forms.TextBox txtBxCharge;
+        private System.Windows.Forms.TextBox txtBxFieldStrength;
+        private System.Windows.Forms.Button btnCalcFieldStrength;
+        private System.Windows.Forms.RichTextBox rTxtBox_Calc_Instr;
+        private System.Windows.Forms.Button btnLogin;
         //
         //rdBtn_1q_1v значит: RadioButton_1question_1variant; (10 вопросов по 4 варианта)
         //

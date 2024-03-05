@@ -25,7 +25,7 @@ namespace ElecticityApp
 
         private void btnElectro_MouseLeave(object sender, EventArgs e) // Курсор вне кнопки
         {
-            btnElectro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            btnElectro.BackColor = System.Drawing.Color.FromArgb(18, 18, 18);
             btnElectro.ForeColor = Color.White;
         }
 
@@ -37,7 +37,7 @@ namespace ElecticityApp
 
         private void btnZadachi_MouseLeave(object sender, EventArgs e)
         {
-            btnZadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            btnZadachi.BackColor = System.Drawing.Color.FromArgb(18, 18, 18);
             btnZadachi.ForeColor = Color.White;
         }
 
@@ -49,21 +49,46 @@ namespace ElecticityApp
 
         private void btnCalc_MouseLeave(object sender, EventArgs e)
         {
-            btnCalc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            btnCalc.BackColor = System.Drawing.Color.FromArgb(18, 18, 18);
             btnCalc.ForeColor = Color.White;
         }
 
         private void btnProveritZadachi_MouseEnter(Object sender, EventArgs e)
         { 
-            btnProveritZadachi.ForeColor= System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))); ;
-            btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(78)))));
+            btnProveritZadachi.ForeColor= System.Drawing.Color.FromArgb(255, 255, 255); ;
+            btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(78, 78, 78);
         }
 
         private void btnProveritZadachi_MouseLeave(Object sender, EventArgs e)
         {
-            this.btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(40, 40, 40);
             this.btnProveritZadachi.ForeColor = System.Drawing.Color.White;
         }
+
+        private void btnCalcFieldStrength_MouseEnter(object sender, EventArgs e)
+        {
+            btnProveritZadachi.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255); ;
+            btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(78, 78, 78);
+        }
+
+        private void btnCalcFieldStrength_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnProveritZadachi.BackColor = System.Drawing.Color.FromArgb(40, 40, 40);
+            this.btnProveritZadachi.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void btnLogin_MouseEnter(object sender, EventArgs e)
+        {
+            this.btnLogin.ForeColor = Color.Black;
+            this.btnLogin.BackColor = SystemColors.Control;
+        }
+
+        private void btnLogin_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(18, 18, 18);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+        }
+
 
         //
 
@@ -87,9 +112,24 @@ namespace ElecticityApp
             panel_Electrostatika.Visible = false;
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Form2 Form2 = new Form2();
+            Form2.ShowDialog();
+        }
+
+        private void btnCalcFieldStrength_Click(object sender, EventArgs e)
+        {
+            bool isForceConverted = double.TryParse(txtBxForce.Text, out double forceConverted);
+            bool isChargeConverted = double.TryParse(txtBxCharge.Text, out double chargeConverted);
+            txtBxFieldStrength.Text = isForceConverted && isChargeConverted ? (forceConverted/chargeConverted).ToString() + " Н/Кл" : "Ошибка. Вводите числа, следуя инструкциям!";
+        }
+
+
+
         private void btnProveritZadachi_Click(Object sender, EventArgs e)
         {
-            int i = 0; int j = 0;
+            int i = 0;
             bool[] kakoi_pravilniy = new bool[10];  //Какой из ответов пользователя оказался верным. index: вопрос; value: true/false;
 
             for (i = 0; i < 10; i++)
@@ -348,8 +388,7 @@ namespace ElecticityApp
         //
 
         private int[] otvety_Zadachi = {2, 3, 2, 3, 4, 2, 2, 2, 3, 4 };     //Правильные ответы на тест. Индекс: вопрос, число: ответ
-        private int[] otvety_User = new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };    //Ответы, которые дал пользователь; Первоначальные значения 0, 
-                                                                                    //чтобы легче отследить, выбрал ли ползователь один из вариантов ответа
+        private int[] otvety_User = new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };    //Ответы, которые дал пользователь;
 
         private void rdBtn_1q_1v_CheckedChanged(object sender, EventArgs e)
         {
