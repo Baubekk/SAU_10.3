@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="ShowPassIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForceLinesOfPositiveAndNegativeCharges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FieldStregthLinesDipoleInteraction.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,6 +38,8 @@ namespace ElecticityApp
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel_Electrostatika = new System.Windows.Forms.Panel();
+            this.FieldStregthLinesDipoleInteraction = new System.Windows.Forms.PictureBox();
+            this.ForceLinesOfPositiveAndNegativeCharges = new System.Windows.Forms.PictureBox();
             this.rTxtBox_Title_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.rTxtBox_Describe_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.panel_Zadachi = new System.Windows.Forms.Panel();
@@ -106,6 +108,8 @@ namespace ElecticityApp
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             this.panel_Electrostatika.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FieldStregthLinesDipoleInteraction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceLinesOfPositiveAndNegativeCharges)).BeginInit();
             this.panel_Zadachi.SuspendLayout();
             this.grBx_1q.SuspendLayout();
             this.grBx_2q.SuspendLayout();
@@ -241,6 +245,9 @@ namespace ElecticityApp
             // 
             // panel_Electrostatika
             // 
+            this.panel_Electrostatika.AutoScroll = true;
+            this.panel_Electrostatika.Controls.Add(this.FieldStregthLinesDipoleInteraction);
+            this.panel_Electrostatika.Controls.Add(this.ForceLinesOfPositiveAndNegativeCharges);
             this.panel_Electrostatika.Controls.Add(this.rTxtBox_Title_Electrostatika);
             this.panel_Electrostatika.Controls.Add(this.rTxtBox_Describe_Electrostatika);
             this.panel_Electrostatika.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -248,6 +255,26 @@ namespace ElecticityApp
             this.panel_Electrostatika.Name = "panel_Electrostatika";
             this.panel_Electrostatika.Size = new System.Drawing.Size(1181, 849);
             this.panel_Electrostatika.TabIndex = 0;
+            // 
+            // FieldStregthLinesDipoleInteraction
+            // 
+            this.FieldStregthLinesDipoleInteraction.Image = global::ElecticityApp.Properties.Resources.FieldStregthLinesDipoleInteraction;
+            this.FieldStregthLinesDipoleInteraction.Location = new System.Drawing.Point(537, 957);
+            this.FieldStregthLinesDipoleInteraction.Name = "FieldStregthLinesDipoleInteraction";
+            this.FieldStregthLinesDipoleInteraction.Size = new System.Drawing.Size(324, 284);
+            this.FieldStregthLinesDipoleInteraction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FieldStregthLinesDipoleInteraction.TabIndex = 0;
+            this.FieldStregthLinesDipoleInteraction.TabStop = false;
+            // 
+            // ForceLinesOfPositiveAndNegativeCharges
+            // 
+            this.ForceLinesOfPositiveAndNegativeCharges.Image = global::ElecticityApp.Properties.Resources.ForceLinesOfPositiveAndNegativeCharges;
+            this.ForceLinesOfPositiveAndNegativeCharges.Location = new System.Drawing.Point(3, 957);
+            this.ForceLinesOfPositiveAndNegativeCharges.Name = "ForceLinesOfPositiveAndNegativeCharges";
+            this.ForceLinesOfPositiveAndNegativeCharges.Size = new System.Drawing.Size(456, 363);
+            this.ForceLinesOfPositiveAndNegativeCharges.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ForceLinesOfPositiveAndNegativeCharges.TabIndex = 1;
+            this.ForceLinesOfPositiveAndNegativeCharges.TabStop = false;
             // 
             // rTxtBox_Title_Electrostatika
             // 
@@ -258,7 +285,7 @@ namespace ElecticityApp
             this.rTxtBox_Title_Electrostatika.ForeColor = System.Drawing.Color.White;
             this.rTxtBox_Title_Electrostatika.Location = new System.Drawing.Point(0, 0);
             this.rTxtBox_Title_Electrostatika.Name = "rTxtBox_Title_Electrostatika";
-            this.rTxtBox_Title_Electrostatika.Size = new System.Drawing.Size(1181, 71);
+            this.rTxtBox_Title_Electrostatika.Size = new System.Drawing.Size(1160, 71);
             this.rTxtBox_Title_Electrostatika.TabIndex = 1;
             this.rTxtBox_Title_Electrostatika.Text = "Напряженность электрического поля";
             // 
@@ -274,7 +301,7 @@ namespace ElecticityApp
             this.rTxtBox_Describe_Electrostatika.Location = new System.Drawing.Point(3, 72);
             this.rTxtBox_Describe_Electrostatika.Name = "rTxtBox_Describe_Electrostatika";
             this.rTxtBox_Describe_Electrostatika.ReadOnly = true;
-            this.rTxtBox_Describe_Electrostatika.Size = new System.Drawing.Size(1174, 774);
+            this.rTxtBox_Describe_Electrostatika.Size = new System.Drawing.Size(1116, 5671);
             this.rTxtBox_Describe_Electrostatika.TabIndex = 0;
             this.rTxtBox_Describe_Electrostatika.Text = resources.GetString("rTxtBox_Describe_Electrostatika.Text");
             // 
@@ -992,11 +1019,14 @@ namespace ElecticityApp
             this.MinimumSize = new System.Drawing.Size(1520, 900);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AcademLearn";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
             this.splitContainer.ResumeLayout(false);
             this.panel_Electrostatika.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FieldStregthLinesDipoleInteraction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceLinesOfPositiveAndNegativeCharges)).EndInit();
             this.panel_Zadachi.ResumeLayout(false);
             this.grBx_1q.ResumeLayout(false);
             this.grBx_1q.PerformLayout();
@@ -1037,6 +1067,8 @@ namespace ElecticityApp
         private System.Windows.Forms.Button btnCalcFieldStrength;
         private System.Windows.Forms.RichTextBox rTxtBox_Calc_Instr;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.PictureBox FieldStregthLinesDipoleInteraction;
+        private System.Windows.Forms.PictureBox ForceLinesOfPositiveAndNegativeCharges;
         //
         //rdBtn_1q_1v значит: RadioButton_1question_1variant; (10 вопросов по 4 варианта)
         //

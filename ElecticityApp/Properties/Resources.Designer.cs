@@ -63,6 +63,26 @@ namespace ElecticityApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FieldStregthLinesDipoleInteraction {
+            get {
+                object obj = ResourceManager.GetObject("FieldStregthLinesDipoleInteraction", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ForceLinesOfPositiveAndNegativeCharges {
+            get {
+                object obj = ResourceManager.GetObject("ForceLinesOfPositiveAndNegativeCharges", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ShowPassIcon {
             get {
                 object obj = ResourceManager.GetObject("ShowPassIcon", resourceCulture);
