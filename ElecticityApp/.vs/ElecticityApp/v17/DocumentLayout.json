@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|c:\\users\\baybe\\source\\repos\\sau3\\electicityapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|c:\\users\\baybe\\source\\repos\\sau3\\electicityapp\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|c:\\users\\baybe\\source\\repos\\sau3\\electicityapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|c:\\users\\baybe\\source\\repos\\sau3\\electicityapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8395875-52C3-4F04-9532-40BA07F7A312}|ElecticityApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.Designer.cs",
+              "RelativeToolTip": "Form2.Designer.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAYwBsBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T18:13:06.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAANEAAAAAAAAAAAAgwO8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T12:22:32.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -50,46 +80,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.Designer.cs",
-              "RelativeDocumentMoniker": "Form2.Designer.cs",
-              "ToolTip": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form2.Designer.cs",
-              "RelativeToolTip": "Form2.Designer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T18:13:06.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAALgAAAAAAAAAAAAYwMUAAAB2AAAA",
+              "ViewState": "AQIAANAAAAAAAAAAAAAYwOYAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T13:49:22.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAD4v3QAAAAkAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAApwHQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T12:38:38.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\baybe\\source\\repos\\sau3\\ElecticityApp\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

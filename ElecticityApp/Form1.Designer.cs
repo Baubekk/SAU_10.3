@@ -36,12 +36,12 @@ namespace ElecticityApp
             this.btnZadachi = new System.Windows.Forms.Button();
             this.btnCalc = new System.Windows.Forms.Button();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel_Electrostatika = new System.Windows.Forms.Panel();
             this.rTxtBox_Title_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.rTxtBox_Describe_Electrostatika = new System.Windows.Forms.RichTextBox();
             this.panel_Zadachi = new System.Windows.Forms.Panel();
             this.rTxtBox_Zadachi = new System.Windows.Forms.RichTextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.grBx_1q = new System.Windows.Forms.GroupBox();
             this.rdBtn_1q_1v = new System.Windows.Forms.RadioButton();
             this.rdBtn_1q_2v = new System.Windows.Forms.RadioButton();
@@ -190,23 +190,6 @@ namespace ElecticityApp
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             this.btnCalc.MouseEnter += new System.EventHandler(this.btnCalc_MouseEnter);
             this.btnCalc.MouseLeave += new System.EventHandler(this.btnCalc_MouseLeave);
-            //
-            // btnLogin
-            //
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(12, 600);
-            this.btnLogin.Name = "btnCalc";
-            this.btnLogin.Size = new System.Drawing.Size(366, 50);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            this.btnLogin.MouseEnter += new System.EventHandler(this.btnLogin_MouseEnter);
-            this.btnLogin.MouseLeave += new System.EventHandler(this.btnLogin_MouseLeave);
             // 
             // splitContainer
             // 
@@ -236,6 +219,25 @@ namespace ElecticityApp
             this.splitContainer.SplitterDistance = 299;
             this.splitContainer.SplitterWidth = 18;
             this.splitContainer.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(12, 250);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(366, 50);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.MouseEnter += new System.EventHandler(this.btnLogin_MouseEnter);
+            this.btnLogin.MouseLeave += new System.EventHandler(this.btnLogin_MouseLeave);
             // 
             // panel_Electrostatika
             // 
@@ -989,6 +991,7 @@ namespace ElecticityApp
             this.ForeColor = System.Drawing.Color.White;
             this.MinimumSize = new System.Drawing.Size(1520, 900);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();

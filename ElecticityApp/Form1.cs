@@ -114,7 +114,7 @@ namespace ElecticityApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
+            Form2 Form2 = new Form2(this);
             Form2.ShowDialog();
         }
 

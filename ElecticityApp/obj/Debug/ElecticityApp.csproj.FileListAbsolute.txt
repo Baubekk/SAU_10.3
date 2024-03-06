@@ -8,3 +8,4 @@ C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.csproj.Ge
 C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.csproj.CoreCompileInputs.cache
 C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.exe
 C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.pdb
+C:\Users\baybe\source\repos\sau3\ElecticityApp\obj\Debug\ElecticityApp.Form2.resources
